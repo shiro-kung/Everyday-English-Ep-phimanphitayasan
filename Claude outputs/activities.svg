@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1224"/>
+      <stop offset="55%" stop-color="#92400e"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fcd34d" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#fcd34d" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur1"><feGaussianBlur stdDeviation="18"/></filter>
+  </defs>
+
+  <rect width="1200" height="400" fill="url(#bgGrad)"/>
+  <circle cx="880" cy="150" r="220" fill="url(#glow)" filter="url(#blur1)"/>
+
+  <!-- floating checkmarks -->
+  <g stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity="0.35" fill="none">
+    <path d="M100 100 L112 112 L136 84" transform="rotate(-8 100 100)"/>
+    <path d="M160 260 L172 272 L196 244" transform="rotate(10 160 260)"/>
+    <path d="M70 200 L82 212 L106 184" transform="rotate(4 70 200)"/>
+  </g>
+
+  <!-- clipboard icon -->
+  <g transform="translate(740,70)">
+    <rect x="20" y="10" width="220" height="260" rx="18" fill="#fff7ed"/>
+    <rect x="90" y="0" width="80" height="30" rx="10" fill="#f59e0b"/>
+    <g stroke="#c2410c" stroke-width="6" stroke-linecap="round">
+      <line x1="55" y1="90" x2="205" y2="90"/>
+      <line x1="55" y1="130" x2="205" y2="130"/>
+      <line x1="55" y1="170" x2="150" y2="170"/>
+    </g>
+    <g stroke="#10B981" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none">
+      <path d="M45 90 L52 97 L64 82" transform="translate(-6,-38)"/>
+      <path d="M45 130 L52 137 L64 122" transform="translate(-6,-38)"/>
+    </g>
+
+    <!-- trophy badge -->
+    <g transform="translate(190,190)">
+      <circle cx="40" cy="40" r="46" fill="#F59E0B" stroke="#0B1224" stroke-width="4"/>
+      <path d="M25 20 h30 v18 a15 15 0 0 1 -30 0 Z" fill="#ffffff"/>
+      <rect x="35" y="52" width="10" height="10" fill="#ffffff"/>
+      <rect x="27" y="62" width="26" height="8" rx="3" fill="#ffffff"/>
+    </g>
+  </g>
+</svg>

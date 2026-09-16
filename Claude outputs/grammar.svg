@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1224"/>
+      <stop offset="55%" stop-color="#064e3b"/>
+      <stop offset="100%" stop-color="#10B981"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#34d399" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#34d399" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur1"><feGaussianBlur stdDeviation="18"/></filter>
+  </defs>
+
+  <rect width="1200" height="400" fill="url(#bgGrad)"/>
+  <circle cx="880" cy="150" r="220" fill="url(#glow)" filter="url(#blur1)"/>
+
+  <!-- floating word chips -->
+  <g font-family="Arial, sans-serif" font-weight="700" opacity="0.55">
+    <g transform="translate(120,80) rotate(-8)">
+      <rect x="0" y="0" width="86" height="36" rx="18" fill="#ffffff" opacity="0.12"/>
+      <text x="43" y="24" text-anchor="middle" fill="#ffffff" font-size="16">was</text>
+    </g>
+    <g transform="translate(230,300) rotate(6)">
+      <rect x="0" y="0" width="86" height="36" rx="18" fill="#ffffff" opacity="0.12"/>
+      <text x="43" y="24" text-anchor="middle" fill="#ffffff" font-size="16">will</text>
+    </g>
+    <g transform="translate(60,220) rotate(4)">
+      <rect x="0" y="0" width="70" height="36" rx="18" fill="#ffffff" opacity="0.12"/>
+      <text x="35" y="24" text-anchor="middle" fill="#ffffff" font-size="16">is</text>
+    </g>
+  </g>
+
+  <!-- open book icon -->
+  <g transform="translate(760,120)">
+    <path d="M0 40 C 60 10, 130 10, 190 40 L190 190 C130 160, 60 160, 0 190 Z" fill="#ecfdf5"/>
+    <path d="M190 40 C 250 10, 320 10, 380 40 L380 190 C320 160, 250 160, 190 190 Z" fill="#d1fae5"/>
+    <line x1="190" y1="40" x2="190" y2="190" stroke="#065f46" stroke-width="4"/>
+    <g stroke="#10B981" stroke-width="5" stroke-linecap="round" opacity="0.7">
+      <line x1="30" y1="70" x2="150" y2="58"/>
+      <line x1="30" y1="95" x2="150" y2="83"/>
+      <line x1="30" y1="120" x2="120" y2="110"/>
+      <line x1="230" y1="58" x2="350" y2="70"/>
+      <line x1="230" y1="83" x2="350" y2="95"/>
+      <line x1="260" y1="110" x2="350" y2="120"/>
+    </g>
+    <!-- check badge -->
+    <circle cx="330" cy="30" r="34" fill="#10B981" stroke="#0B1224" stroke-width="4"/>
+    <path d="M314 30 L326 42 L348 16" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>
